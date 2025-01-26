@@ -1,0 +1,43 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+header {
+  background: #007BFF;
+  color: white;
+  padding: 1rem 0;
+  text-align: center;
+}
+nav {
+  display: flex;
+  justify-content: center;
+  background: #333;
+}
+nav a {
+  color: white;
+  padding: 1rem;
+  text-decoration: none;
+}
+nav a:hover {
+  background: #555;
+}
+section {
+  padding: 2rem;
+}
+#about {
+  background: #f4f4f4;
+}
+#services {
+  background: #ddd;
+}
+#contact {
+  background: #f4f4f4;
+}
+footer {
+  text-align: center;
+  padding: 1rem;
+  background: #333;
+  color: white;
+}

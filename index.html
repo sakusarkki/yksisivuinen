@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="fi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yksisivuinen verkkosivu</title>
+  <style>
+    /* Tyylit (CSS) */
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      line-height: 1.6;
+    }
+    header {
+      background: #007BFF;
+      color: white;
+      padding: 1rem 0;
+      text-align: center;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background: #333;
+    }
+    nav a {
+      color: white;
+      padding: 1rem;
+      text-decoration: none;
+    }
+    nav a:hover {
+      background: #555;
+    }
+    section {
+      padding: 2rem;
+    }
+    #meista {
+      background: #f4f4f4;
+    }
+    #palvelut {
+      background: #ddd;
+    }
+    #yhteystiedot {
+      background: #f4f4f4;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #333;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <!-- HTML-osa -->
+  <header>
+    <h1>Tervetuloa verkkosivullemme</h1>
+  </header>
+  <nav>
+    <a href="#meista">Meistä</a>
+    <a href="#palvelut">Palvelut</a>
+    <a href="#yhteystiedot">Yhteystiedot</a>
+  </nav>
+  <section id="meista">
+    <h2>Meistä</h2>
+    <p>Olemme yritys, joka tarjoaa verkkosivujen suunnittelua ja kehitystä.</p>
+  </section>
+  <section id="palvelut">
+    <h2>Palvelut</h2>
+    <p>Tarjoamme verkkosivujen suunnittelua, ohjelmistokehitystä ja konsultointia.</p>
+  </section>
+  <section id="yhteystiedot">
+    <h2>Yhteystiedot</h2>
+    <p>Ota meihin yhteyttä: <a href="mailto:info@esimerkki.fi">info@esimerkki.fi</a></p>
+  </section>
+  <footer>
+    <p>Tekijänoikeudet &copy; 2025. Kaikki oikeudet pidätetään.</p>
+  </footer>
+
+  <script>
+    // JavaScript-osio
+    document.querySelectorAll('nav a').forEach(link => {
+      link.addEventListener('click', e => {
+        e.preventDefault();
+        const target = document.querySelector(link.getAttribute('href'));
+        target.scrollIntoView({ behavior: 'smooth' });
+      });
+    });
+  </script>
+</body>
+</html>
